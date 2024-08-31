@@ -23,5 +23,5 @@ def fib(number):
 print(fib(int(input())))
 
 # Examples
-print(fib(5))
-print(fib(10))
+print(fib(5))  # Outputs 5
+print(fib(10)) # Outputs 55 
