@@ -7,7 +7,7 @@
 #   fib_number -- an integer representing the Fibonacci number at the specified position
 fib <- function(number) {
   
-  # Initialize the first two Fibonacci numbers and a variable to hold the current Fibonacci number
+  # Initialize variables
   first_number <- 1  # The first Fibonacci number
   second_number <- 1 # The second Fibonacci number
   fib_number <- 1    # Variable to store the current Fibonacci number
