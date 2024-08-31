@@ -18,5 +18,5 @@
 %mend fib;
 
 /* Examples*/
-%fib(5); /* Outputs 5 */
+%fib(5);  /* Outputs 5 */
 %fib(10); /* Outputs 55 */
