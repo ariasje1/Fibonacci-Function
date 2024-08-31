@@ -30,6 +30,6 @@
 
 %mend fib;
 
-/* Examples*/
+/* Examples */
 %fib(5);  /* Outputs 5  */
 %fib(10); /* Outputs 55 */
