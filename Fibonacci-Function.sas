@@ -3,7 +3,6 @@
     Returns: fib_number -- an integer representing the Fibonacci number at the specified position
 */
 %macro fib(number);
-  %local first_number second_number fib_number i;
 
   /* Initialize the first two Fibonacci numbers */
   %let first_number = 1;
@@ -11,14 +10,24 @@
   %let fib_number = 1;
 
   /* Loop to calculate the Fibonacci number */
-  %do i = 3 %to &number;
-    %let fib_number = %eval(&first_number + &second_number);
-    %let first_number = &second_number;
-    %let second_number = &fib_number;
+  %if &number = 1 or &number = 2 %then %do;
+    /* The first two Fibonacci numbers are always 1 */
+    %let fib_number = 1;
+  %end;
+  %else %do;
+    /* Iterate from 3 to the specified number */
+    %do n = 3 %to &number;
+      /* Calculate the next Fibonacci number */
+      %let fib_number = %eval(&first_number + &second_number);
+      /* Shift the last two numbers to prepare for the next iteration */
+      %let first_number = &second_number;
+      %let second_number = &fib_number;
+    %end;
   %end;
 
   /* Print the result */
   %put The Fibonacci number at position &number is &fib_number;
+
 %mend fib;
 
 /* Examples*/
