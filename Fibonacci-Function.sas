@@ -17,5 +17,6 @@
   %put The Fibonacci number at position &number is &fib_number;
 %mend fib;
 
-/* Example usage */
+/* Examples*/
+%fib(5);
 %fib(10);
