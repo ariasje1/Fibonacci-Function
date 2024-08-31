@@ -4,7 +4,7 @@
 */
 %macro fib(number);
 
-  /* Initialize the first two Fibonacci numbers */
+  /* Initialize variables */
   %let first_number = 1;
   %let second_number = 1;
   %let fib_number = 1;
