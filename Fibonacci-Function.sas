@@ -1,3 +1,7 @@
+/*  Calculates the Fibonacci number at the specified position in the Fibonacci sequence.
+    Parameter: number -- a positive integer representing the position in the Fibonacci sequence
+    Returns: fib_number -- an integer representing the Fibonacci number at the specified position
+*/
 %macro fib(number);
   %local first_number second_number fib_number i;
 
