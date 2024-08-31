@@ -21,3 +21,7 @@ def fib(number):
 
 
 print(fib(int(input())))
+
+# Examples
+print(fib(5))
+print(fib(10))
